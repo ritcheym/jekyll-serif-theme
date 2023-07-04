@@ -10,9 +10,6 @@ main:
     weight: 4
   - name: "Collections"
     url: "/collections/"
-    weight: 2
-  - name: "Contact"
-    url: "/contact/"
     weight: 5
 
 footer:
