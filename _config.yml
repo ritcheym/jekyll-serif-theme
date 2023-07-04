@@ -14,7 +14,7 @@ home:
   limit_collections: 6
 
 collections:
-  collections:
+  research:
     output: true
     sort_by: weight
   team:
@@ -26,9 +26,9 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "collections"
+      type: "research"
     values:
-      layout: "collection"
+      layout: "page"
   - scope:
       path: ""
       type: "news"

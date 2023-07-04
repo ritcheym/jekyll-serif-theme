@@ -8,4 +8,3 @@ intro_image_hide_on_mobile: false
 ---
 
 # News
-The latest updates from the lab

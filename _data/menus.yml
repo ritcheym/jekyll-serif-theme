@@ -5,11 +5,11 @@ main:
   - name: "Team"
     url: "/team/"
     weight: 3
-  - name: "About"
-    url: "/about/"
+  - name: "Resources"
+    url: "/resources/"
     weight: 4
-  - name: "Collections"
-    url: "/collections/"
+  - name: "Research"
+    url: "/research/"
     weight: 5
 
 footer:
