@@ -1,11 +1,13 @@
 ---
-title: "Peter Van Eijk"
-date: 2018-11-19T10:47:58+10:00
+title: "Lab Member"
 image: "images/team/peter-van-eijk-711986-unsplash.jpg"
-jobtitle: "Director"
-linkedinurl: "https://www.linkedin.com/"
-promoted: true
-weight: 1
+jobtitle: "Thesis Student"
+linktocv: ""
+googlescholar: ""
+github: ""
+twitter: ""
+email: ""
+weight: 5  # 2: Postdoc, 3: Grad student, 4: Full-time staff, 5: Thesis student
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
