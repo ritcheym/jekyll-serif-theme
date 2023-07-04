@@ -1,6 +1,9 @@
 main:
-  - name: "News"
-    url: "/news/"
+  - name: "Research"
+    url: "/research/"
+    weight: 1
+  - name: "Papers"
+    url: "/papers/"
     weight: 2
   - name: "Team"
     url: "/team/"
@@ -8,9 +11,10 @@ main:
   - name: "Resources"
     url: "/resources/"
     weight: 4
-  - name: "Research"
-    url: "/research/"
+  - name: "News"
+    url: "/news/"
     weight: 5
+
 
 footer:
   - name: "Home"
