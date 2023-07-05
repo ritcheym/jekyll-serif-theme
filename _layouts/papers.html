@@ -3,34 +3,22 @@ layout: default
 bodyClass: "page-collections"
 ---
 
-<div class="intro">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ content }}
-      </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
-      </div>
-      {% endif %}
-    </div>
-  </div>
-</div>
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+      <div class="col-12">
+              <h1 class="title">{{page.title}}</h1>
 
 <div class="container pt-6 pb-6">
   <div class="row">
-    {% for collection in site.papers %}
-    <div class="col-12 col-md-6 mb-3">
-      <div class="collection collection-summary">
-        <div class="collection-content">
-          <h2 class="collection-title">
-            <a href="{{ collection.url | relative_url }}">{{ collection.title }}</a>
-          </h2>
-          <p>{{ collection.content | markdownify | strip_html | truncate: 100 }}</p>
-        </div>
-      </div>
+    {% for collection in site.papers reversed %}
+    <div class="col-12 col-md-12 mb-3">
+          <p><a href="{{ collection.url | relative_url }}">{{ collection.title }}</a></p>
+          <p style="font-size:80%"> {{ collection.refShort }} </p>
     </div>
     {% endfor %}
   </div>
+</div>
+
+</div>
+</div>
 </div>
