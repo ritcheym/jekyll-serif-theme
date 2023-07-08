@@ -2,6 +2,10 @@ baseurl: '/'
 permalink: pretty
 title: 'Lab Name'
 
+seo:
+  google_analytics_id: ""  
+  copyright_text: 'Copyright &copy Lab Name 2023 - <a href="/about/">Info</a>'
+
 logo:
   mobile: "images/logo/logo-mobile.svg"
   mobile_height: "32px"
@@ -22,9 +26,6 @@ collections:
   news:
     output: true
     sort_by: date
-  papers:
-    output: true
-    sort_by: date
 
 defaults:
   - scope:
@@ -42,11 +43,6 @@ defaults:
       type: "team"
     values:
       layout: "team"
-  - scope:
-      path: ""
-      type: "papers"
-    values:
-      layout: "page"
 
 sass:
   style: compressed # possible values: nested expanded compact compressed

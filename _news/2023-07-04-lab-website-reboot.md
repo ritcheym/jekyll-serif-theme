@@ -1,7 +1,9 @@
 ---
 title: Lab website reboot
-date: 2023-07-04
-author: Maureen Ritchey
+date: 2023-07-31
+author: Your Name
 layout: post
 ---
-What better way to celebrate the Declaration of Independence than by rebooting our lab website :)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel metus pulvinar, tempus velit et, fermentum purus. Nam maximus, elit vel rutrum venenatis, nunc diam lobortis elit, ac efficitur purus enim tristique quam. Vestibulum sed sapien laoreet, facilisis nisl eu, egestas ante. Mauris mattis ligula velit, a imperdiet mi faucibus in. Proin porttitor orci non ligula placerat, nec pulvinar metus aliquam. Nunc id augue at urna dictum vestibulum sit amet quis erat. Maecenas semper metus velit, at malesuada leo semper sed. Phasellus sit amet cursus lacus. Duis quis lectus varius, feugiat nibh nec, tincidunt quam. Vestibulum posuere augue ut est placerat, at pulvinar dui malesuada. Sed vel porta elit, nec accumsan metus. Curabitur elementum mi ut cursus venenatis. Sed nisl ligula, hendrerit eu consequat at, dignissim vitae arcu. Duis ut dolor ut enim vehicula iaculis.
+
+Vestibulum ultricies magna leo, ac rhoncus metus tempor non. Quisque dictum ipsum quis laoreet euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec nec lorem purus. Sed maximus ligula sit amet augue fermentum, non fringilla quam mollis. Duis cursus metus sed neque hendrerit, sodales eleifend massa pretium. Fusce placerat eget erat id finibus. Duis non metus sit amet erat auctor efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed non ultrices tortor. In accumsan interdum magna in eleifend. Cras dolor magna, aliquam sed ornare id, venenatis eget sapien. Curabitur eu odio risus.

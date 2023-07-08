@@ -10,14 +10,47 @@ bodyClass: "page-collections"
 
 <div class="container pt-6 pb-6">
   <div class="row">
-    {% for collection in site.papers reversed %}
-    <div class="col-12 col-md-12 mb-3">
-          <p><a href="{{ collection.url | relative_url }}">{{ collection.title }}</a></p>
-          <p style="font-size:80%"> {{ collection.refShort }} </p>
+    {% for paper in site.data.papers %}
+
+    {% if paper.yearHeader %}
+    <div class="row">
+      <div class="col-12 col-md-12 mb-3">
+        <h3>{{ paper.yearHeader }}</h3>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="col-12 col-md-12 col-lg-12 mb-3">
+          <h3><a href="{{ paper.doi }}">{{ paper.title }}</a></h3>
+          <p>
+            {{ paper.shortRef }} 
+            <br>
+            {% if paper.pdf %}
+            <a target="_blank" href="/pdf/{{ paper.pdf }}">pdf</a>  &nbsp;
+            {% endif %}
+            {% if paper.doi %}
+            <a target="_blank" href="{{ paper.doi }}">link</i></a> &nbsp;
+            {% endif %}
+            {% if paper.opendata %}
+            <a target="_blank" href="{{ paper.opendata }}">data</i></a> &nbsp;
+            {% endif %}
+            {% if paper.code %}
+            <a target="_blank" href="{{ paper.code }}">code</i></a> &nbsp;
+            {% endif %}
+            {% if paper.media %}
+            <a target="_blank" href="{{ paper.media }}">media</i></a> &nbsp;
+            {% endif %}
+          <details>
+            <summary>Abstract</summary>
+            <p>{{ paper.abstract }}</p>
+          </details>
+        </p>
+
     </div>
     {% endfor %}
   </div>
 </div>
+
 
 </div>
 </div>
