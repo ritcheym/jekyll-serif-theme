@@ -1,6 +1,6 @@
 ---
 title: Lab website reboot
-date: 2023-07-31
+date: 2023-07-08
 author: Your Name
 layout: post
 ---

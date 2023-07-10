@@ -4,6 +4,7 @@ p {
   font-family: $font-family-base;
   margin-bottom: 20px;
 }
+
 h1 {
   font-size: 30px;
   font-family: $font-family-heading;
@@ -40,4 +41,22 @@ ol {
     padding: 0;
     margin: 0;
   }
+}
+
+details {
+  line-height: 26px;
+  color: $steel;
+  font-family: $font-family-base;
+  margin-bottom: 5px;
+}
+
+details > summary {
+  padding: 0px 0px;
+}
+
+details > p {
+  background-color: $white-offset;
+  padding: 10px 10px;
+  margin: 0;
+  width: 90%;
 }

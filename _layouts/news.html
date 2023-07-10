@@ -26,7 +26,7 @@ bodyClass: "page-collections"
                         <h2 class="collection-title">
                           <a href="{{ newspost.url | relative_url }}">{{ newspost.title }}</a>
                         </h2>
-                        <p>{{ newspost.content | markdownify | strip_html | truncate: 150 }}</p>
+                        <p>{{ newspost.content | markdownify | strip_html | truncate: 100 }}</p>
                         <br>
                       </div>
                     </div>

@@ -3,48 +3,46 @@ layout: default
 bodyClass: "page-collections"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+<div class="container pb-6 pt-6 pt-md-10 pb-md-6">
   <div class="row justify-content-start">
       <div class="col-12">
               <h1 class="title">{{page.title}}</h1>
 
-<div class="container pt-6 pb-6">
+<div class="container pt-6 pb-6 pr-md-10">
   <div class="row">
     {% for paper in site.data.papers %}
 
     {% if paper.yearHeader %}
     <div class="row">
       <div class="col-12 col-md-12 mb-3">
-        <h3>{{ paper.yearHeader }}</h3>
+        <h2>{{ paper.yearHeader }}</h2>
       </div>
     </div>
     {% endif %}
 
-    <div class="col-12 col-md-12 col-lg-12 mb-3">
-          <h3><a href="{{ paper.doi }}">{{ paper.title }}</a></h3>
-          <p>
-            {{ paper.shortRef }} 
-            <br>
+    <div class="col-12 col-md-12 mb-3">
+          <h3 style="font-size:1em"><a href="{{ paper.doi }}">{{ paper.title }}</a></h3>
+          <p style="padding-left: 20px; margin-bottom:5px; font-size:0.9em">
+            {{ paper.shortRef }} &nbsp;
             {% if paper.pdf %}
-            <a target="_blank" href="/pdf/{{ paper.pdf }}">pdf</a>  &nbsp;
-            {% endif %}
-            {% if paper.doi %}
-            <a target="_blank" href="{{ paper.doi }}">link</i></a> &nbsp;
+            <a target="_blank" href="/pdf/{{ paper.pdf }}">pdf</a>  
             {% endif %}
             {% if paper.opendata %}
-            <a target="_blank" href="{{ paper.opendata }}">data</i></a> &nbsp;
+            - <a target="_blank" href="{{ paper.opendata }}">data</i></a> 
             {% endif %}
             {% if paper.code %}
-            <a target="_blank" href="{{ paper.code }}">code</i></a> &nbsp;
+            - <a target="_blank" href="{{ paper.code }}">code</i></a> 
             {% endif %}
             {% if paper.media %}
-            <a target="_blank" href="{{ paper.media }}">media</i></a> &nbsp;
+            - <a target="_blank" href="{{ paper.media }}">media</i></a> 
             {% endif %}
-          <details>
-            <summary>Abstract</summary>
-            <p>{{ paper.abstract }}</p>
-          </details>
-        </p>
+            </p>
+            {% if paper.abstract %}
+              <details  style="padding-left: 20px; margin-bottom:5px; font-size: 0.9em">
+                <summary>Abstract</summary>
+                <p>{{ paper.abstract }}</p>
+              </details>
+            {% endif %}
 
     </div>
     {% endfor %}
