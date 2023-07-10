@@ -11,7 +11,7 @@ bodyClass: "page-teams"
 
         <div class="container pt-3 pb-3">
             <div class="row">
-                {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
+                {% assign promoted_teams = site.team | where: "type", "promoted" | sort: "weight" %}
                 {% for team in promoted_teams %}
                 <div class="col-12 col-md-6 mb-2">
                     <div class="team team-summary team-summary-large">
@@ -32,11 +32,13 @@ bodyClass: "page-teams"
                 </div>
                 {% endfor %}
             </div>
+        </div>
             
-            <div class="row">
-                {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
+        {% assign teams = site.team | where: "type", "regular" | sort: "weight" %}
+
+        <div class="row">
                 {% for team in teams %}
-                <div class="col-12 col-md-4 mb-3">
+                <div class="col-12 col-md-4 col-lg-4 mb-2">
                     <div class="team team-summary  team-summary-large-nocolor">
                         {% if team.image %}
                         <div class="team-image">
@@ -48,6 +50,29 @@ bodyClass: "page-teams"
                             <p class="team-description">{{ team.jobtitle }}</p>
                         </div>
                     </div>
+                </div>
+                {% endfor %}
+        </div>
+
+        <div class="container pt-3 pb-3">
+                {% assign alumni_teams = site.team | where: "type", "alumni" | sort: "weight" %}
+                {% if alumni_teams %}
+                <hr>
+                <div class="row">
+                    <div class="col-12 mt-2 mb-2">
+                        <h2>Alumni</h2> 
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="row">
+                {% for team in alumni_teams %}
+                <div class="col-12">
+                    {% if team.website %}
+                        <p style="margin-bottom:5px"><a href="{{ team.website }}">{{team.title}}</a>, {{team.jobtitle}}</p>
+                    {% else %}
+                        <p style="margin-bottom:5px">{{team.title}}, {{team.jobtitle}}</p>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>

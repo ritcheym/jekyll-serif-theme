@@ -1,14 +1,13 @@
 ---
-# Rename file with individual's name
 title: "Lab Member"
-image: "images/team/joseph-gonzalez-399972-unsplash.jpg"
-jobtitle: "Staff"
+image: "images/team/peter-van-eijk-711986-unsplash.jpg"
+jobtitle: "Lab Coordinator"
 linktocv: ""
 googlescholar: ""
-github: ""
-twitter: ""
+website: ""
 email: ""
 weight: 4  # 2: Postdoc, 3: Grad student, 4: Full-time staff, 5: Thesis student
+type: regular # promoted, regular, or alumni
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

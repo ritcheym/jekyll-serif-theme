@@ -64,4 +64,19 @@
       }
     }
   }
+
+  .team-summary-large-profile {
+    padding: 30px;
+    border-radius: 3px;
+    .team-image {
+      height: 180px;
+      width: 180px;
+      margin-right: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 180px;
+      }
+    }
+  }
 }
