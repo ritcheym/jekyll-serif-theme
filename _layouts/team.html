@@ -4,24 +4,24 @@ bodyClass: "page-teams"
 ---
 
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
-
+  <div class="team team-profile">
   <div class="row">
-    <div class="col-12 col-md-9">
-      <div class="team team-summary  team-summary-large-profile">
+        <div class="col-12 col-md-3"></div>
           {% if page.image %}
               <div class="team-image">
                   <img width="180" height="180" alt="{{ page.title }}" class="img-fluid mb-2" src="{{ page.image | relative_url }}" />
               </div>
           {% endif %}
-
+        </div>
+        <div class="col-12 col-md-7">
            <div class="team-meta">
               <h2 class="team-name">{{ page.title }}</a></h2>
               <p class="team-description">{{ page.jobtitle }}</p>
             </div>
               <div class="team-content">{{content}}</div>
-            </div>
         </div>
-     </div>
+      </div>
     </div>
+  </div>
 
 </div>
